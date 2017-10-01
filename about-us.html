@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<link rel="shortcut icon" href="images/favicon.ico">
+    
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/colors/" rel="stylesheet" type="text/css" id="colors" />
+    
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+    
+	<!-- SCRIPTS -->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if IE]><html class="ie" lang="en"> <![endif]-->
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<script src="js/superfish.min.js" type="text/javascript"></script>
+	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/animate.js" type="text/javascript"></script>
+	<script src="js/myscript.js" type="text/javascript"></script>
+	
+	
+	<style type="text/css">
+		/* Dropdown Button */
+.dropbtn {
+	background-color: white;
+    color: red;
+    font-size: 13px;
+    padding: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color:white;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* Dropdown Button */
+.dropbtn1 {
+	background-color: white;
+    color: red;
+    font-size: 13px;
+    padding: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn1:hover, .dropbtn1:focus {
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content1 a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content1 a:hover {background-color:white;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show1 {display:block;}
+	</style>
+
+	<script type="text/javascript">
+		/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+function myFunctionx() {
+    document.getElementById("myDropdown1").classList.toggle("show1");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn1')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content1");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show1')) {
+        openDropdown.classList.remove('show1');
+      }
+    }
+  }
+}
+	</script>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<img id="preloader" src="images/preloader.gif" alt="" />
+<!-- //PRELOADER -->
+<div class="preloader_hide">
+
+	<!-- PAGE -->
+	<div id="page" class="single_page">
+	
+		<!-- HEADER -->
+		<header>
+			
+			<!-- MENU BLOCK -->
+			<div class="menu_block">
+			
+				<!-- CONTAINER -->
+				<div class="container clearfix">
+					
+					<!-- LOGO -->
+					<div class="logo pull-left">
+						<a href="index.html" ><img src="images\logo.jpeg" style="height: 70px; width: 200px;"></span></a>
+					</div><!-- //LOGO -->
+					
+					<!-- MENU -->
+					<div class="pull-right">
+						<nav class="navmenu center">
+							<ul>
+								<li class="first active scroll_btn"><a href="index.html" ><span style="color: red;">Home</span></a></li>
+								<li><div class="dropdown">
+									  <button onclick="myFunction()" class="dropbtn"><b>ABOUT US</b></button>
+									  <div id="myDropdown" class="dropdown-content">
+									    <a href="about-us.html">Who we are?</a>
+									    <a href="about-us.html">Team Members</a>
+									    <a href="about-us.html">Mentors</a>
+									  </div>
+									</div></li>
+								<li><div class="dropdown1">
+									  <button onclick="myFunctionx()" class="dropbtn1"><b>SERVICES</b></button>
+									  <div id="myDropdown1" class="dropdown-content1">
+									    <a href="campus-to-corporate.html">Campus to Corporate</a>
+									    <a href="mba-exam-prep.html">MBA Exam Prepration Module</a>
+									    <a href="banking-exam-module.html">Banking Exam Module</a>
+									    <a href="share-market-certifications.html">Share Market Certification</a>
+									    <a href="shopper-marketing.html">Digital Marketing, Photography and Action workshop module</a>
+									    <a href="supply-chain-logistics.html">Supply chain and logistics</a>
+									  </div>
+									</div></li>
+								<li class="scroll_btn"><a href="index.html" ><span style="color: red;">Gallery</span></a></li>
+								<li class="scroll_btn"><a href="#team" ><span style="color: red;">Our Team</span></a></li>
+								<li class="scroll_btn"><a href="#mentors" ><span style="color: red;">Our Mentors</span></a></li>
+								<li class="scroll_btn last"><a href="#contacts" ><span style="color: red;">Contacts</span></a></li>
+							</ul>
+						</nav>
+					</div><!-- //MENU -->
+				</div><!-- //MENU BLOCK -->
+			</div><!-- //CONTAINER -->
+		</header><!-- //HEADER -->
+		
+		
+		<!-- BREADCRUMBS -->
+		<section class="breadcrumbs_block clearfix parallax">
+			<div class="container center">
+				<h2><b>About</b> Us</h2>
+			</div>
+		</section><!-- //BREADCRUMBS -->
+		
+<center>
+			<!-- BLOG -->
+		<section id="visionandmission">
+			
+			<!-- CONTAINER -->
+			<div class="container">
+				
+				<!-- ROW -->
+				<div class="row">
+				
+					<!-- CONTAINER -->
+			<div class="container"  style="font-size: 16px;text-align: justify;">
+			<br><br>
+			Brightwayz is a competency building institute and has been known for its innovative and customized approach for education sector.<br><br> 
+
+			Brightwayz is catering major sector of graduation to postgraduate providing various bunch of innovative service to create effective and efficient workforce to corporate sector.<br><br> 
+
+			Our Team and mentors are majorly from VJTI,SP Jain and having core domain experience and have core vision of innovative current education system by imparting core domain knowledge with well defined mixture of corporate.<br><br>
+
+			Brightwayz Team is consistently defining systematic and focussed approach to all graduate students with which they can enhance corporate skills.These skills which enable then to undestand the conditions prevailing in the corporate sector and will make them comeptent enough. <br><br>
+
+			Brightwayz team is believing on holding hands and guiding them to nurture strength and enhance respective skills <br><br>
+
+				<h2><b><span style="color: red;"></span></b> </h2><br>
+				<span style="font-size: 22px"><b><span style="color: red;">Vision:</span></b></span><br> <br>
+				To be a leader in empowering students, irrespective of the institute, to make it big in corporate sector.  <br><br>
+
+				<span style="font-size: 22px"><b><span style="color: red;">Mission:</span></b></span><br> <br>
+				•	Extensive programme held on Weekends/Weekdays (Depending on your choice)<br>
+				•	Pedagogy includes lectures covering all topics, module wise test, full length test and online test. (Upto 100 test will be taken)<br>
+				•	Mock interviews once you get interview call<br><br>
+				
+					<span style="font-size: 22px"><b><span style="color: red;">Who we are:</span></b></span><br> <br>
+				We aim to deliver the managerial and competency building skills which are conductive to foster innovations, by becoming a hub for various educational services which will help the institutions, students and corporate sector.<br><br>
+
+			</div><!-- //CONTAINER -->
+				</div><!-- //ROW -->
+			</div><!-- //CONTAINER -->			
+		</section><!-- //BLOG -->
+
+<!-- TEAM -->
+		<section id="team">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+				<h2><b><span style="color: white;" >Our</span></b> <span style="color: white;" >Team</h2></span>
+				
+				<!-- ROW -->
+				<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+						
+					<!-- TEAM SLIDER -->
+					<div class="owl-demo owl-carousel team_slider">
+				
+						<!-- crewman1 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/niketan.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Mr.Niketan Taware</p>
+										<span>"Bring Innovations to sustain in the competitive world"</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									He is Director of Brightwayz.He has done his Civil Engineering and MBA in Marketing.He is having major expertise in product management,marketing and operations.He is taking care of regular functions brightwayz.
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+						
+						<!-- crewman2 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/kharote.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Mr. Purushottam Kharote</p>
+										<span>Financial Consultant </span>
+									</div>
+								</div>
+								<div class="crewman_social">
+								He is acting as a Financial Consultant  of Brightwayz.He is having more than 25 years of experience in accounting,taxation and fund management
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+						
+						<!-- crewman3 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/niketan.jpg" alt="Nirmala Taware" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Mrs. Nirmala Taware</p>
+										<span> Director- " Hard Work  with Smart work is Key to Success"</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									She is Director and one of the strong pillar of Brightwayz, She has done her B.Com and M.Com from Shivaji University and Having more than 25 years of experience in Education sector.She is in-charge  administration division of Brightwayz.
+								</div>
+							</div>
+						</div><!-- crewman3 -->
+					</div><!-- TEAM SLIDER -->
+				</div><!-- //ROW -->
+			</div><!-- //CONTAINER -->
+		</section><!-- //TEAM -->
+
+		<!-- BLOG -->
+		<section id="mentors">
+			
+			<!-- CONTAINER -->
+			<div class="container">
+			<br><br>
+				<h2><b><span>Mentors</span></b> <span></h2></span>
+				
+				<!-- ROW -->
+				<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+						
+					<!-- TEAM SLIDER -->
+					<div class="owl-demo owl-carousel team_slider">
+				
+						<!-- crewman1 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/abdul rasheed.jpg" alt="Abdul Rasheed" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Mr. Abdul Rasheed</p>
+										<span>Tourism Specialist</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<span>
+										He has done his BMS and MMS in Marketing.He is been instrumental in teaching Tourism as a career to our students.He is having more than 6 years of work experience from corporate sector and teaching.
+									</span>
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+						
+						<!-- crewman2 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/alpa.jpg" alt="Apla Shah" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Mrs. Alpa Shah</p>
+										<span>Finance and Share Market Specialist- Founder- Nextlevel.</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									She has  always been associated with finance and have been associated with the field for over 20 years with TATA.  After working for many years, She started Next Level Education to create financial Literacy
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+						
+						<!-- crewman3 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/jay achrya.jpg" alt="Jay Acharya" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Mr.Jay Acharya</p>
+										<span>HR Mentor- Founder, Partner ylaconsulting</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+								</div>
+							</div>
+						</div><!-- crewman3 -->
+						
+						<!-- crewman4 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/mayur shah.jpg" alt="Mayur Shah" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Mr.Mayur Shah</p>
+										<span> Real Estate Specialist - Founder- Discover Space Solutions.</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+								</div>
+							</div>
+						</div><!-- crewman4 -->
+						
+						<!-- crewman5 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/mayur.jpg" alt="Mayur Nalawade" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Mr. Mayur Nalawade</p>
+										<span>UPSC/MPSC and Competitive Exam Specialist.</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									He is been training,Guiding and mentoring students for various competitive exams like UPSC and MPSC exams from last 6 years.He has his engineering from VJTI and have cleared various competitive exams successfully.
+								</div>
+							</div>
+						</div><!-- crewman5 -->
+						<!-- crewman6 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/bhavna.jpeg" alt="Bhavana Agarwal" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Miss. Bhavana Agarwal</p>
+										<span>Tourism Specialist</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<span>
+										He has done his BMS and MMS in Marketing.He is been instrumental in teaching Tourism as a career to our students.He is having more than 6 years of work experience from corporate sector and teaching.
+									</span>
+								</div>
+							</div>
+						</div><!-- crewman6 -->
+					</div><!-- TEAM SLIDER -->
+				</div><!-- //ROW -->
+			</div><!-- //CONTAINER -->		
+		</section><!-- //BLOG -->
+		</section><!-- //TEAM -->
+</center>
+
+	</div><!-- //PAGE -->
+
+	
+	<!-- CONTACTS -->
+	<section id="contacts">
+	</section><!-- //CONTACTS -->
+	
+	<!-- FOOTER -->
+	<footer>
+			
+		<!-- CONTAINER -->
+		<div class="container">
+			
+			<!-- ROW -->
+			<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+
+				<div class="col-lg-6 col-md-6 col-sm-6 padbot30 foot_about_block">
+					<h4><b>contact </b> us</h4>
+					<p>We value people over profits, quality over quantity, and keeping it real. As such, we deliver an unmatched working relationship with our clients.</p>
+					<p> Brightwayz Management services, <br>F266,Dreams  Mall,Bhandup West,mumbai-78</p>
+					<p>contact@brightwayz.in</p>
+					<p>+91 77109 46409</p>
+					<ul class="social">
+						<li><a href="https://www.youtube.com/channel/UCbRvw92hZ3_8h92S1Rqg9aw" ><i class="fa fa-youtube-play"></i></a></li>
+						<li><a href="https://www.facebook.com/Brightwayz4career/" ><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.google.co.in/maps/place/Dreams+The+Mall/@19.1374722,72.9227975,15z/data=!4m8!1m2!2m1!1sdream+mall+bhandup!3m4!1s0x3be7b87b1defc5b7:0x5240036d3c93cdb5!8m2!3d19.1460742!4d72.9365788" ><i class="map_show fa fa-map-marker"></i></a></li>
+					</ul>
+				</div>
+				
+				<div class="respond_clear"></div>
+				
+				<div class="col-lg-6 col-md-6 padbot30">
+					CONTACT US
+					
+					<!-- CONTACT FORM -->
+					<div class="span9 contact_form">
+						<div id="note"></div>
+						<div id="fields">
+							<form id="contact-form-face" class="clearfix" action="#">
+								<input type="text" name="name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+								<textarea name="message" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">Message</textarea>
+								<input class="contact_btn" type="submit" value="Send message" />
+							</form>
+						</div>
+					</div><!-- //CONTACT FORM -->
+				</div>
+			</div><!-- //ROW -->
+		</div><!-- //CONTAINER -->
+	</footer><!-- //FOOTER -->
+	
+	
+	<!-- MAP -->
+	<div id="map">
+		<a class="map_hide" href="javascript:void(0);" ><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></a>
+		<iframe src="http://maps.google.com/maps?f=q&amp;give%20a%20hand=s_q&amp;hl=en&amp;geocode=&amp;q=london&amp;sll=37.0625,-95.677068&amp;sspn=42.631141,90.263672&amp;ie=UTF8&amp;hq=&amp;hnear=London,+United+Kingdom&amp;ll=51.500141,-0.126257&amp;spn=0.026448,0.039396&amp;z=14&amp;output=embed" ></iframe>
+	</div><!-- //MAP -->
+
+</div>
+</body>
+</html>

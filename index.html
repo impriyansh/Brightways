@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<title>Brightwayz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<link rel="shortcut icon" href="images/favicon.ico">
+    
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+    
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+    
+	<!-- SCRIPTS -->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if IE]><html class="ie" lang="en"> <![endif]-->
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<script src="js/superfish.min.js" type="text/javascript"></script>
+	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="js/owl.carousel.js" type="text/javascript"></script>
+	<script src="js/animate.js" type="text/javascript"></script>
+	<script src="js/jquery.BlackAndWhite.js"></script>
+	<script src="js/myscript.js" type="text/javascript"></script>
+	<script>
+		
+		//PrettyPhoto
+		jQuery(document).ready(function() {
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+		
+		//BlackAndWhite
+		$(window).load(function(){
+			$('.client_img').BlackAndWhite({
+				hoverEffect : true, // default true
+				// set the path to BnWWorker.js for a superfast implementation
+				webworkerPath : false,
+				// for the images with a fluid width and height 
+				responsive:true,
+				// to invert the hover effect
+				invertHoverEffect: false,
+				// this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+				intensity:1,
+				speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+					fadeIn: 300, // 200ms for fadeIn animations
+					fadeOut: 300 // 800ms for fadeOut animations
+				},
+				onImageReady:function(img) {
+					// this callback gets executed anytime an image is converted
+				}
+			});
+		});
+		
+	</script>
+
+	<style type="text/css">
+		/* Dropdown Button */
+.dropbtn {
+	background-color: white;
+    color: red;
+    font-size: 13px;
+    padding: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color:white;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* Dropdown Button */
+.dropbtn1 {
+	background-color: white;
+    color: red;
+    font-size: 13px;
+    padding: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn1:hover, .dropbtn1:focus {
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content1 a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content1 a:hover {background-color:white;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show1 {display:block;}
+	</style>
+
+	<script type="text/javascript">
+		/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+function myFunctionx() {
+    document.getElementById("myDropdown1").classList.toggle("show1");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn1')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content1");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show1')) {
+        openDropdown.classList.remove('show1');
+      }
+    }
+  }
+}
+	</script>
+	
+</head>
+<body>
+
+<!-- PRELOADER -->
+<img id="preloader" src="images/preloader.gif" alt="" />
+<!-- //PRELOADER -->
+<div class="preloader_hide">
+
+	<!-- PAGE -->
+	<div id="page">
+	
+		<!-- HEADER -->
+		<header>
+			
+			<!-- MENU BLOCK -->
+			<div class="menu_block">
+			
+				<!-- CONTAINER -->
+				<div class="container clearfix">
+					
+					<!-- LOGO -->
+					<div class="logo pull-left">
+						<a href="index.html" ><img src="images\logo.jpeg" style="height: 70px; width: 200px;"></span></a>
+					</div><!-- //LOGO -->
+					
+					<!-- MENU -->
+					<div class="pull-right">
+						<nav class="navmenu center">
+							<ul>
+								<li class="first active scroll_btn"><a href="index.html" ><span style="color: red;">Home</span></a></li>
+								<li><div class="dropdown">
+									  <button onclick="myFunction()" class="dropbtn"><b>ABOUT US</b></button>
+									  <div id="myDropdown" class="dropdown-content">
+									    <a href="about-us.html">Who we are?</a>
+									    <a href="about-us.html">Team Members</a>
+									    <a href="about-us.html">Mentors</a>
+									  </div>
+									</div></li>
+								<li><div class="dropdown1">
+									  <button onclick="myFunctionx()" class="dropbtn1"><b>SERVICES</b></button>
+									  <div id="myDropdown1" class="dropdown-content1">
+									    <a href="campus-to-corporate.html">Campus to Corporate</a>
+									    <a href="mba-exam-prep.html">MBA Exam Prepration Module</a>
+									    <a href="banking-exam-module.html">Banking Exam Module</a>
+									    <a href="share-market-certifications.html">Share Market Certification</a>
+									    <a href="shopper-marketing.html"><span style="font-size: 14px;">Digital Marketing, Photography and Action workshop module</span></a>
+									    <a href="supply-chain-logistics.html">Supply chain and logistics</a>
+									  </div>
+									</div></li>
+								<li class="scroll_btn"><a href="#gallery" ><span style="color: red;">Gallery</span></a></li>
+								<li class="scroll_btn"><a href="#testimonial" ><span style="color: red;">Testimonial</span></a></li>
+								<li class="scroll_btn last"><a href="#contacts" ><span style="color: red;">Contacts</span></a></li>
+							</ul>
+						</nav>
+					</div><!-- //MENU -->
+				</div><!-- //MENU BLOCK -->
+			</div><!-- //CONTAINER -->
+		</header><!-- //HEADER -->
+		
+		
+		<!-- HOME -->
+		<section id="home" class="padbot0">
+				
+		
+			<!-- PORTFOLIO SLIDER -->
+							<div class="flexslider portfolio_single_slider">
+								<ul class="slides">
+									<li><img src="images/slider/slide1_bg.jpg" alt="" /></li>
+									<li><img src="images/slider/slide2_bg.jpg" alt="" /></li>
+									<li><img src="images/slider/slide3_bg.jpg" alt="" /></li>
+									<li><img src="images/slider/slide4_bg.jpg" alt="" /></li>
+								</ul>
+							</div><!-- //PORTFOLIO SLIDER -->
+		
+		</section><!-- //HOME -->
+		
+		<!-- ABOUT -->
+		<section id="about">
+			
+			<!-- SERVICES -->
+			<div class="services_block padbot40" data-appear-top-offset="-200" data-animated="fadeInUp">
+				
+				<!-- CONTAINER -->
+				<div class="container">
+				
+					<!-- ROW -->
+					<div class="row">
+						<h2><b><span style="color: red;">About Us</span></b></h2><br>
+						<span style="font-size: 22px; text-align: justify;">
+						Brightwayz is a competency building institute and has been known for its innovative and customized approach for education sector. Brightwayz is catering major sector of graduation to postgraduate providing various bunch of innovative service to create effective and efficient workforce to corporate sector. </span><br><br>
+						<center>
+							<button style="border-radius: 10px; height: 50px; width: 120px; border-color: red;">
+								<a href="about-us.html"> <span style="color: red"> Read more </span></button>
+						</center>
+					</div><!-- //ROW -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //SERVICES -->
+			
+			<!-- OUR SERVICES -->
+			<div class="cleancode_block" id="services">
+				
+				<!-- CONTAINER -->
+				<div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+					<!-- CASTOM TAB -->
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade in active clearfix" id="tab3">
+							<p class="title"><b><a href="banking-exam-module.html"> Banking</b></a> Exam Prepartion</p>
+							<span>Banking Exam Module is designed to help individuals from commerce and finance background to crack the banking recruitment entrance exams. These exams help you get jobs in premier banks such as RBI, SBI, Punjab National Bank, Bank of Baroda and other public sector banks.</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab4">
+							<p class="title"><b><a href="share-market-certifications.html">Share Market</b></a> Certification</p>
+							<<span>Capital Market Module is designed to help individuals who all are having interest in Capital Market and Derivate Market. This module will help individual to understand the importance of capital market with technical knowledge and to impart them with practical expertise.</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab1">
+							<p class="title"><b><a href="campus-to-corporate.html"> Campus to Corporate</b> Module</p>
+							<span>Corporate Saleability Module is designed to help individuals from any sector to make him/ her ready as per the expectations of the corporate sector. As per the research,70 percent of the graduate and PG students are not able to perform as per the expectation because of various problems.</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab6">
+							<p class="title"><b><a href="supply-chain-logistics.html"> SupplyChain and Logistics</b> Management</p>
+							<span>Supply Chain Management Module  is designed to help individuals understand the importance of supply chain and to impart them with supply chain expertise. With the knowledge of tools and techniques in SCM, you’ll open yourselves to new career opportunities in industries.</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab5">
+							<p class="title"><b><a href="shopper-marketing.html"> Photography</a></b> Marketing</p>
+							<span>Photography Marketing Module is designed to help understand the importance of Shopper Marketing in FMCG and Retail Industries. With the rise of Modern Retail and changing Shopper habits, companies are increasingly looking forth for employees who can understand the Shopper and execute strategies. </span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab2">
+							<p class="title"><b><a href="shopper-marketing.html">MBA Exam</a></b> Preparation</p>
+							<span>Out of this, Full time MBA is attracting major value from all MBA aspirants. </span>
+						</div>
+					</div>
+					<ul id="myTab" class="nav nav-tabs">						
+						<li class="active"><a class="i1" href="#tab1" data-toggle="tab" ><i></i><span>Campus to corporate</span></a></li>
+						<li><a class="i2" href="#tab2" data-toggle="tab" ><i></i><span>MBA Exam Prep</span></a></li>
+						<li><a class="i3" href="#tab3" data-toggle="tab" ><i></i><span>Banking Module</span></a></li>
+						<li><a class="i4" href="#tab4" data-toggle="tab" ><i></i><span>Share Market Certification</span></a></li>
+						<li><a class="i5" href="#tab5" data-toggle="tab" ><i></i><span>Photography Marketing</span></a></li>
+						<li><a class="i6" href="#tab6" data-toggle="tab" ><i></i><span>SupplyChain and Logistics</span></a></li>	
+					</ul><!-- CASTOM TAB -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //CLEAN CODE -->
+			
+			
+		</section><!-- //ABOUT -->
+		
+		
+		<!-- GALLERY -->
+		<section id="gallery" class="padbot20">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+			<br><br>
+				<h2><b><span style="color: red;">Gallery</span></b></h2>
+			</div><!-- //CONTAINER -->
+			
+				
+			<div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp"s>
+				<!-- PROJECTS SLIDER -->
+				<div class="owl-demo owl-carousel projects_slider">
+					
+					<!-- work1 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/1.jpg" alt="" />
+								<a class="zoom" href="images/works/1.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work1 -->
+					
+					<!-- work2 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/2.jpg" alt="" />
+								<a class="zoom" href="images/works/2.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work2 -->
+					
+					<!-- work3 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/3.jpg" alt="" />
+								<a class="zoom" href="images/works/3.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work3 -->
+					
+					<!-- work4 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/4.jpg" alt="" />
+								<a class="zoom" href="images/works/4.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work4 -->
+
+					<!-- work8-->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/8.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work8 -->
+
+					<!-- work9 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/9.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work9 -->
+
+					<!-- work11 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/11.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work11 -->
+
+					<!-- work12 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/12.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work12 -->
+
+					<!-- work13 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/13.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work13 -->
+
+					<!-- work14 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/14.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work14 -->
+
+					<!-- work15 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/15.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work15 -->
+
+					<!-- work16 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/16.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work16 -->
+
+					<!-- work17 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/17.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work17 -->
+
+					<!-- work18 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/18.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work18 -->
+
+					<!-- work19 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/19.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work19 -->
+
+					<!-- work20 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/20.jpg" alt="" />
+								<a class="zoom" href="images/works/20.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work20 -->
+
+					<!-- work21 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/21.jpg" alt="" />
+								<a class="zoom" href="images/works/6.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work21 -->
+					
+					<!-- work22 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/22.jpg" alt="" />
+								<a class="zoom" href="images/works/22.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work22 -->
+
+					<!-- work23 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/23.jpg" alt="" />
+								<a class="zoom" href="images/works/23.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work23 -->
+
+					<!-- work24 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/24.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work24 -->
+
+					<!-- work25 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/25.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work25 -->
+
+					<!-- work26 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/26.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work26 -->
+
+					<!-- work27 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/27.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work27 -->
+
+					<!-- work28 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/28.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work28 -->
+
+					<!-- work29 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/29.jpg" alt="" />
+								<a class="zoom" href="images/works/29.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work29 -->
+
+					<!-- work30 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/30.jpg" alt="" />
+								<a class="zoom" href="images/works/30.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work30 -->
+
+					<!-- work31 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/31.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work31 -->
+
+					<!-- work32 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/32.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work32 -->
+
+					<!-- work33 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/33.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work33 -->
+
+					<!-- work34 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/34.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work34 -->
+
+					<!-- work35 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/35.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work35 -->
+				</div><!-- //PROJECTS SLIDER -->
+			</div>
+			
+			
+			<!-- OUR CLIENTS -->
+			<div class="our_clients" >
+			<!-- CONTAINER -->
+			<div class="container">
+				<h2><b><span style="color: red;">Appreciation</span></b></h2>
+			</div><!-- //CONTAINER -->
+			
+				
+			<div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp"s>
+				<!-- PROJECTS SLIDER -->
+				<div class="owl-demo owl-carousel projects_slider">
+					
+					<!-- work1 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/c1.jpg" alt="" />
+								<a class="zoom" href="images/works/c1.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work1 -->
+					
+					<!-- work2 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/c2.jpg" alt="" />
+								<a class="zoom" href="images/works/c2.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work2 -->
+					
+					<!-- work3 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/c3.jpg" alt="" />
+								<a class="zoom" href="images/works/c3.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work3 -->
+					
+					<!-- work4 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/c4.jpg" alt="" />
+								<a class="zoom" href="images/works/c4.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+						</div>
+					</div><!-- //work4 -->
+				</div><!-- //PROJECTS SLIDER -->
+				
+			</div><!-- //OUR CLIENTS -->
+		</section><!-- //PROJECTS -->
+		
+		
+		
+		
+		
+		<!-- TESTIMONIAL -->
+		<section id="testimonial">
+		
+			<!-- CONTAINER -->
+			<div class="container" >
+				<h2><b><span style="color: red;">Testimonial</span></b></h2>
+				
+				<!-- TESTIMONIALS -->
+				<div class="testimonials" data-appear-top-offset="-200" data-animated="fadeInUp">
+						
+					<!-- TESTIMONIALS SLIDER -->
+					<div class="owl-demo owl-carousel testim_slider">
+						
+						<!-- TESTIMONIAL1 -->
+						<div class="item">
+							<div class="testim_content">"Brightways is a platform wherein I have enhanced my abilities and skills and I got theconfidence that I can prove myself in the corporate world. Brightwayz is a service which can add knowledge, self development and overall personality.. It’s a one year process which adds value which helps any individual to shape up future career. Brightwayz has enhanced approachability towards analyzing situations and resolving them withgreat ease. Myself persona is highly boosted by Brightwayz."</div>
+							<div class="testim_author">— <span style="color: red;"> Prasad Narkar,</span> <b><span style="color: red;">1st Year MBA-Marketing, Bharti Vidyapeeth </b></span></div>
+						</div><!-- TESTIMONIAL1 -->
+						
+						<!-- TESTIMONIAL2 -->
+						<div class="item">
+							<div class="testim_content">“Brightwayz is a service which has been launched by the alumni of VJTI, SP Jain and Other premier Institutes from India which has enhanced the skill and knowledge as a Management students .It is providing me basic insights of corporate sectors and other industries like Real Estate, retail, IT and other industries which is necessary for adding common sense in our personality. After joining Brightwayz, I had improved my presention skills, PowerPoint and excel skills and now I can confidently perform any activity.”</div>
+							<div class="testim_author">— <span style="color: red;"> Rahul Hazare,</span> <b><span style="color: red;">B.SC Chemistry , Jhujhuwala College </span></b></div>
+						</div><!-- TESTIMONIAL2 -->
+						
+						<!-- TESTIMONIAL3 -->
+						<div class="item">
+							<div class="testim_content">“Brightwayz is a service designed to bridge the gap between top B’ school students and lower grade B’ school students. Initially I was confuse about the future career and I was lacking with various skills like  Presentations, Excel , English Speaking and Academics. <br>
+							After joining Brightwayz I feeling confident that I have taken first step to improve myself. By which I am improving my communication skills, computer knowledge and management skills. ”</div>
+							<div class="testim_author">— <span style="color: red;"> Rohit Shinde,</span> <b><span style="color: red;">1st Year MBA-Marketing, Kohinoor business school</span></b></div>
+						</div><!-- TESTIMONIAL3 -->
+
+						<!-- TESTIMONIAL4 -->
+						<div class="item">
+							<div class="testim_content">“Brightwayz is career related service which help for the enhancement of the students. Brightwayz is different set of Module which is helping students to improve the current affairs with Technical knowledge of the students who are all pursuing an MBA. After attending the services like eye opener seminar, personality test, professional resume, MBA notes etc which has improved my various qualities with which I can confidently face the challenges of the corporate sector. After taking experience of Brightwayz, I have seen various changes in myself. Brightwayz has improved personality like by improving my interview confidence, verbal as well as nonverbal communication.”</div>
+							<div class="testim_author">— <span style="color: red;">Sagar Rawale,</span> <b><span style="color: red;">B.SC IT- Bandodkar College</span></b></div>
+						</div><!-- TESTIMONIAL4 -->
+
+						<!-- TESTIMONIAL5 -->
+						<div class="item">
+							<div class="testim_content">“Brightwayz is a innovative concept for the MBA students. It develops the overall skills required for the manager and also gives defined an required corporate exposure. It definitely acts as a tool for me which grooms the basic skills of my personality .It adds the value for the students to develop their confidence, personality and Management skills. After joining Brightwayz I feeling confident that I am aware about the SWOT analysis and can easily face the interview with proper presentation skills.”</div>
+							<div class="testim_author">— <span style="color: red;"> Ankit Gupta, </span><b><span style="color: red;">2 nd Year PGDBA-HR, Welingkar </span></b></div>
+						</div><!-- TESTIMONIAL5 -->
+
+						<!-- TESTIMONIAL6 -->
+						<div class="item">
+							<div class="testim_content">“Initially ,I was confused about GRE,MBA or MS when I was in 3 rd Year of Engineering. After Joining Brightwayz, I got the focused approach. I have improved upon various verbal and nonverbal skills which is helping me to improve myself as a Techno-managerial person.Brightwayz’s Systematic approach does help engineering students like me to improve overall personality with which I can face corporate world."</div>
+							<div class="testim_author">—<span style="color: red;"> Sameer Telavne,</span> <b><span style="color: red;">Datta Maghe College of Engineering.</span></b></div>
+						</div><!-- TESTIMONIAL6 -->
+
+						<!-- TESTIMONIAL7 -->
+						<div class="item">
+							<div class="testim_content">“As a MBA Finance 1st year student, I  am very much interested in making my career in Share Marker. Initially I was confused about the entire domain. To solve various issues of the same, I joined Brightwayz’s Capital Market Course. After 2 months, I can confidently say that I can make my career in share market.<br>
+							Brightwayz team do work on every concept with practical and theoretical approach. They do provide live trading , perfect guidance of various certifications and majorly regural expert session from corporate sector. ”</div>
+							<div class="testim_author">—<span style="color: red;"> Shridhar Sarmalkar, </span><b><span style="color: red;">IMCOST College, Mulund</span></b></div>
+						</div><!-- TESTIMONIAL7 -->
+
+						<!-- TESTIMONIAL8 -->
+						<div class="item">
+							<div class="testim_content">“I am 1 st yr MMS student. I am interested in human resource and I am doing my specialization in human resource management. Before joining Brightwayz’s I was little bit confused in my specialization and I was not having more knowledge in every sector but after joining this Brightwayz’s I got to know various knowledge in every sector of the organisation. As well as technical knowledge like excel, powerpoint, prezy.com. Brightwayz’s teams helps me to give a proper focus to my career with the practical knowledge.”</div>
+							<div class="testim_author">— <span style="color: red;"> Ankita, </span><b><span style="color: red;">Saket college of management, Kalyan</span></b></div>
+						</div><!-- TESTIMONIAL8 -->
+
+					</div><!-- TESTIMONIALS SLIDER -->
+				</div><!-- //TESTIMONIALS -->
+				
+				
+			</div><!-- //CONTAINER -->
+		</section><!-- //NEWS -->
+	</div><!-- //PAGE -->
+	
+	<!-- CONTACTS -->
+	<section id="contacts">
+	</section><!-- //CONTACTS -->
+	
+	<!-- FOOTER -->
+	<footer>
+			
+		<!-- CONTAINER -->
+		<div class="container">
+			
+			<!-- ROW -->
+			<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+
+				<div class="col-lg-6 col-md-6 col-sm-6 padbot30 foot_about_block">
+					<h4><b>contact </b> us</h4>
+					<p>We value people over profits, quality over quantity, and keeping it real. As such, we deliver an unmatched working relationship with our clients.</p>
+					<p> Brightwayz Management services, <br>F266,Dreams  Mall,Bhandup West,mumbai-78</p>
+					<p>contact@brightwayz.in</p>
+					<p>+91 77109 46409</p>
+					<ul class="social">
+						<li><a href="https://www.youtube.com/channel/UCbRvw92hZ3_8h92S1Rqg9aw" ><i class="fa fa-youtube-play"></i></a></li>
+						<li><a href="https://www.facebook.com/Brightwayz4career/" ><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.google.co.in/maps/place/Dreams+The+Mall/@19.1374722,72.9227975,15z/data=!4m8!1m2!2m1!1sdream+mall+bhandup!3m4!1s0x3be7b87b1defc5b7:0x5240036d3c93cdb5!8m2!3d19.1460742!4d72.9365788" ><i class="map_show fa fa-map-marker"></i></a></li>
+					</ul>
+				</div>
+				
+				<div class="respond_clear"></div>
+				
+				<div class="col-lg-6 col-md-6 padbot30">
+					
+					
+					<!-- CONTACT FORM -->
+					<div class="span9 contact_form">
+						<div id="note"></div>
+						<div id="fields">
+							<form id="contact-form-face contactForm" method="post" action="inc/sendEmail.php"  >
+								<input type="text" name="name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+								<textarea name="contactMessage"  id="contactMessage" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">Message</textarea>
+								<input class="contact_btn" type="submit" value="Send message" />
+							</form>
+						</div>
+					</div> <!-- //CONTACT FORM -->
+				</div>
+			</div><!-- //ROW -->
+		</div><!-- //CONTAINER -->
+	</footer><!-- //FOOTER -->
+	
+	
+	<!-- MAP -->
+	<div id="map">
+		<a class="map_hide" href="javascript:void(0);" ><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></a>
+		<iframe src="http://maps.google.com/maps?f=q&amp;give%20a%20hand=s_q&amp;hl=en&amp;geocode=&amp;q=london&amp;sll=37.0625,-95.677068&amp;sspn=42.631141,90.263672&amp;ie=UTF8&amp;hq=&amp;hnear=London,+United+Kingdom&amp;ll=51.500141,-0.126257&amp;spn=0.026448,0.039396&amp;z=14&amp;output=embed" ></iframe>
+	</div><!-- //MAP -->
+
+</div>
+</body>
+</html>
